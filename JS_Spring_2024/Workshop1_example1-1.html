@@ -1,0 +1,166 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Workshop 1</title>
+		<!-- script tag is where Javascript goes to -->
+		<script>
+			
+			alert ("Hello world!");
+			var x = 35;
+var order = 'Beer';
+
+if (x > 50) {
+    document.write("<h1>He's over 50!</h1>");
+    console.log("He's over 50!");
+} else if (x <= 50 && x > 40) {
+    document.write("<strong>Senior person</strong> who ordered some " + order);
+    console.log("Senior person who ordered some " + order);
+} else if (x <= 40 && x > 30) {
+    document.write("<em>Middle aged man</em>, who ordered some " + order);
+    console.log("Middle aged man, who ordered some " + order);
+} else if (x <= 30 && x > 20) {
+    document.write("Young adult, who ordered some " + order);
+    console.log("Young adult, who ordered some " + order);
+} else {
+    document.write("<p>It seems you're underage.</p>");
+    console.log("It seems you're underage.");
+}
+var arr = [];
+
+for (var i = 0; i < 15; i++) {
+    var randomNumber = Math.floor(Math.random() * 100) + 1;
+    console.log(randomNumber);
+    document.write("<p>Random Number " + (i + 1) + ": <strong>" + randomNumber + "</strong></p>");
+
+    arr.push(randomNumber);
+}
+
+console.log(arr);
+
+function areYouOldEnough(age) {
+    if (age < 18) {
+        console.log(false);
+        return false;
+    } else {
+        console.log(true);
+        return true;
+    }
+}
+
+var personage1 = 20;
+var personage2 = 15;
+
+console.log("Is personage1 old enough? " + areYouOldEnough(personage1));
+console.log("Is personage2 old enough? " + areYouOldEnough(personage2));
+
+function areYouOldEnough(age) {
+    if (age < 18) {
+        console.log("You are not old enough. Age: " + age);
+        return false;
+    } else {
+        console.log("You are old enough. Age: " + age);
+        return true;
+    }
+}
+
+
+console.log(areYouOldEnough(16));
+
+
+document.write("<p>" + areYouOldEnough(19) + "</p>");
+
+
+alert(areYouOldEnough(5));
+alert(areYouOldEnough(25));
+
+
+// Define an object to hold data for a person
+var person = {
+    firstName: "John",
+    lastName: "Doe",
+    age: 50,
+    eyeColor: "blue",
+    address: "Helsinki",
+    telephone: "0409343484",
+    printInfo: function () {
+        console.log("Name: " + this.firstName + " " + this.lastName);
+        console.log("Age: " + this.age);
+        console.log("Eye Color: " + this.eyeColor);
+        console.log("Address: " + this.address);
+        console.log("Telephone: " + this.telephone);
+    }
+};
+
+
+var peopleArray = [
+    {
+        firstName: "Jani",
+        lastName: "Rautanen",
+        age: 28,
+        eyeColor: "brown",
+        address: "Espoo",
+        telephone: "0456494594",
+        printInfo: function () {
+            console.log("Name: " + this.firstName + " " + this.lastName);
+        }
+    },
+    {
+        firstName: "Rauta",
+        lastName: "Sorsa",
+        age: 35,
+        eyeColor: "green",
+        address: "Vantaa",
+        telephone: "555-9101",
+        printInfo: function () {
+            console.log("Name: " + this.firstName + " " + this.lastName);
+        }
+    },
+    {
+        firstName: "Eva",
+        lastName: "Sikstus",
+        age: 42,
+        eyeColor: "hazel",
+        address: "Järvenpää",
+        telephone: "0456323454",
+        printInfo: function () {
+            console.log("Name: " + this.firstName + " " + this.lastName);
+        }
+    },
+    {
+        firstName: "Juho",
+        lastName: "Turki",
+        age: 22,
+        eyeColor: "gray",
+        address: "Tampere",
+        telephone: "0432859434",
+        printInfo: function () {
+            console.log("Name: " + this.firstName + " " + this.lastName);
+        }
+    }
+];
+
+
+for (var i = 0; i < peopleArray.length; i++) {
+    peopleArray[i].printInfo();
+    console.log("------------");
+}
+
+
+
+			for(var i = 0; i < 400; i++) {
+				console.log("This round is " + i);
+				var x = 50;
+
+			}
+		</script>
+		
+	</head>
+
+	<body>
+		<h1>Drinking age</h1>
+		<p> Lorem ipsum dolorem...   </p>
+
+	</body>
+
+</html>
